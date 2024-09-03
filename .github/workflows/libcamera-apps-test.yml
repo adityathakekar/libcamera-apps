@@ -94,7 +94,7 @@ jobs:
       run: mkdir -p ${{github.workspace}}/test_output
 
     - name: Download build
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: build-artifacts-gcc-Release
         path: ${{github.workspace}}
